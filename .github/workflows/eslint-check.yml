@@ -31,12 +31,14 @@ jobs:
 
       - name: Install ESLint & Dependencies
         run: |
-          npm install
+          npm install eslint@latest eslint-config-standard@latest eslint-plugin-import@latest eslint-plugin-n@latest eslint-plugin-promise@latest
+          npm install @microsoft/eslint-formatter-sarif@latest
 
       - name: Run ESLint
         run: npx eslint ./scripts/*
           --ext .js,.jsx,.ts,.tsx
           --config .eslintrc.js
+          --format @microsoft/eslint-formatter-sarif
           --output-file eslint-results.sarif
         continue-on-error: true
 
