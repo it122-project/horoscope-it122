@@ -1,5 +1,5 @@
 name: ESLint
-run-name: ${{ github.actor }} Running ESLint
+run-name: ${{ github.actor }} pushed to ${{ github.ref }} running ESLint
 on: [push]
   #  push:
   #    branches:
