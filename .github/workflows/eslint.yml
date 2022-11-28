@@ -1,15 +1,10 @@
 name: ESLint
 run-name: ${{ github.actor }} pushed to ${{ github.ref }} running ESLint
 on:
-  push:
-    paths:
-      - '**.js'
-      - '**.jsx'
-      - '**.ts'
-      - '**.tsx'
   pull_request:
     types:
       - opened
+      - reopened
       - edited
     paths:
       - '**.js'
