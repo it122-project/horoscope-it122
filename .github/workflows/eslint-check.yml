@@ -34,7 +34,7 @@ jobs:
           npm install eslint@latest
 
       - name: Run ESLint
-        run: npx eslint .
+        run: npx eslint
           --config .eslintrc.js
           --ext .js,.jsx,.ts,.tsx
           --output-file eslint-results.sarif
