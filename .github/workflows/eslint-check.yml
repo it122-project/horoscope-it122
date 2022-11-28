@@ -11,10 +11,6 @@ jobs:
     name: Run ESLint scanning
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-
     permissions:
       contents: read
       security-events: write
@@ -26,7 +22,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 'latest'
           cache: 'npm'
 
       - name: Install ESLint & Dependencies
