@@ -23,11 +23,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Initialize npm
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+
+      - name: Initialize npm
         run: npm init -y
 
       - name: Install ESLint
