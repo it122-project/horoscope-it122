@@ -29,9 +29,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      - name: Initialize npm
-        run: npm init -y
-
       - name: Install ESLint
         run: |
           npm init @eslint/config --config semistandard
