@@ -29,9 +29,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      - name: Install ESLint
+      - name: Install ESLint & Dependencies
         run: |
-          npm install eslint@latest
+          npm install
 
       - name: Run ESLint
         run: npx eslint
