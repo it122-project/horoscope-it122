@@ -1,11 +1,22 @@
 name: ESLint
 run-name: ${{ github.actor }} pushed to ${{ github.ref }} running ESLint
-on: [push]
-  #  push:
-  #    branches:
-  #      [ $default-branch, $protected-branch ]
-  #    pull_request:
-  #      branches: [ $default-branch ]
+on:
+  push:
+    paths:
+      - '**.js'
+      - '**.jsx'
+      - '**.ts'
+      - '**.tsx'
+  pull_request:
+    types:
+      - opened
+      - edited
+    paths:
+      - '**.js'
+      - '**.jsx'
+      - '**.ts'
+      - '**.tsx'
+
 jobs:
   es-lint:
     name: Run ESLint scanning
