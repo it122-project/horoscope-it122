@@ -14,9 +14,5 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Clear old version of site
-      - run: rm -rf /srv/www/example.com/*
-
-      - name: Copy all new files
-      - run: cp -r ./* /srv/www/example.com/
+      - run: |
+          echo The PR was merged proceeding to deploy the new site
