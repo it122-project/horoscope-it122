@@ -16,3 +16,5 @@ jobs:
         uses: actions/checkout@v3
       - run: |
           echo The PR was merged proceeding to deploy the new site
+          rm -rf /srv/www/example.com/*
+          cp -r ./* /srv/www/example.com/
