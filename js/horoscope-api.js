@@ -21,7 +21,7 @@ const DAYS = [
     'tomorrow'
 ];
 
-function stringValidator (value, possibleValues) {
+function stringValidator(value, possibleValues) {
     if (typeof value === 'string' && possibleValues.includes(value.toLowerCase())) {
         return value.toLowerCase();
     } else {
@@ -51,4 +51,4 @@ async function getHoroscope(sign, day) {
     return response.json();
 }
 
-export {getHoroscope};
+export { getHoroscope };
