@@ -21,7 +21,7 @@ const DAYS = [
     'tomorrow'
 ];
 
-function stringValidator (value, possibleValues) {
+function stringValidator(value, possibleValues) {
     if (typeof value === 'string' && possibleValues.includes(value.toLowerCase())) {
         return value.toLowerCase();
     } else {
@@ -38,7 +38,11 @@ class Options {
 
 async function getHoroscope(sign, day) {
     const options = new Options(sign, day);
-    const fetchURL = `${baseURL}/?sign=${options.sign}&day${options.day}`;
+    let fetchURL = `${baseURL}/?`;
+
+    for (const [key, value] of Object.entries(options)) {
+        fetchURL += `${key}=${value}&`;
+    }
 
     const response = await fetch(fetchURL, {
         method: 'POST',
@@ -47,4 +51,4 @@ async function getHoroscope(sign, day) {
     return response.json();
 }
 
-export {getHoroscope};
+export { getHoroscope };
