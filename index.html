@@ -1,181 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Horoscope App</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div id="main"></div>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-lg-5">
-                <a class="navbar-brand" href="#!">Horoscopes 2022</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li> -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="container px-lg-5">
-                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-                    <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">A warm welcome!</h1>
-                        <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                        <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Page Content-->
-        <section class="pt-4">
-            <div class="container px-lg-5">
-                <!-- Page Features-->
-                <div class="row gx-lg-5">
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/AQUARIUSLOGO.png" alt="aquarius">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                                <h2 class="fs-4 fw-bold">Fresh new layout</h2>
-                                <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/ARIESLOGO.png" alt="aries">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
-                                <h2 class="fs-4 fw-bold">Free to download</h2>
-                                <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/CANCERLOGO.png" alt="cancer">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
-                                <h2 class="fs-4 fw-bold">Jumbotron hero header</h2>
-                                <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/CAPRICORNLOGO.png" alt="capricorn">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
-                                <h2 class="fs-4 fw-bold">Feature boxes</h2>
-                                <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/GEMINILOGO.png" alt="gemini">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
-                                <h2 class="fs-4 fw-bold">Simple clean code</h2>
-                                <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/LEOLOGO.png" alt="leo">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                                <h2 class="fs-4 fw-bold">Horoscopes Team</h2>
-                                <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/LIBRALOGO.png" alt="libra">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                                <h2 class="fs-4 fw-bold">Fresh new layout</h2>
-                                <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/PISCESLOGO.png" alt="pisces">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
-                                <h2 class="fs-4 fw-bold">Free to download</h2>
-                                <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/SAGGITTARIUSLOGO.png" alt="saggittarius">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
-                                <h2 class="fs-4 fw-bold">Jumbotron hero header</h2>
-                                <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/SCORPIOLOGO.png" alt="scorpio">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
-                                <h2 class="fs-4 fw-bold">Feature boxes</h2>
-                                <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/TAURUSLOGO.png" alt="taurus">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
-                                <h2 class="fs-4 fw-bold">Simple clean code</h2>
-                                <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xxl-3 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <img class="card-img-top" src="./images/VIRGOLOGO.png" alt="virgo">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                                <h2 class="fs-4 fw-bold">Horoscopes Team</h2>
-                                <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script type='module' src="js/scripts.js"></script>
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+	<title>Horoscope App</title>
+		<!-- Favicon-->
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<!-- Bootstrap icons-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link href="css/styles.css" rel="stylesheet" />
+		<link href="css/xtrastyles.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Responsive navbar-->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container px-lg-5">
+				<a class="navbar-brand" href="#!">Horoscopes 2022</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+						<!-- <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Header-->
+		<header class="py-5">
+			<div class="container px-lg-5">
+				<div class="p-4 p-lg-5 rounded-3 text-center">
+					<div class="m-4 m-lg-5">
+						<h1 class="display-5 fw-bold">A warm welcome!</h1>
+						<p class="fs-4 fst-italic">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
+						<a class="btn btn-lg bg-accent" href="#!">Call to action</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Page Content-->
+		<section class="pt-4">
+			<div class="container px-lg-1">
+				<!-- Page Features-->
+				<div class="row gx-lg-3">
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/ARIESLOGO.png" alt="aries">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Aries</h2>
+								<p class="fs-6">MAR 12 - APR 19</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/TAURUSLOGO.png" alt="taurus">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Taurus</h2>
+								<p class="fs-6">APR 20 - MAY 20</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/GEMINILOGO.png" alt="gemini">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Gemini</h2>
+								<p class="fs-6">MAY 21 - JUN 20</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/CANCERLOGO.png" alt="cancer">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Cancer</h2>
+								<p class="fs-6">JUN 21 - JUL 22</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/LEOLOGO.png" alt="leo">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Leo</h2>
+								<p class="fs-6">JUL 23 - AUG 22</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/VIRGOLOGO.png" alt="virgo">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Virgo</h2>
+								<p class="fs-6">AUG 23 - SEP 22</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/LIBRALOGO.png" alt="libra">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Libra</h2>
+								<p class="fs-6">SEP 23 - OCT 22</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/SCORPIOLOGO.png" alt="scorpio">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Scorpio</h2>
+								<p class="fs-6">OCT 23 - NOV 21</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/SAGGITTARIUSLOGO.png" alt="saggittarius">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Sagittarius</h2>
+								<p class="fs-6">NOV 22 - DEC 21</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/CAPRICORNLOGO.png" alt="capricorn">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Capricorn</h2>
+								<p class="fs-6">DEC 22 - JAN 19</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/PISCESLOGO.png" alt="pisces">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Pisces</h2>
+								<p class="fs-6">FEB 19 - MAR 20</p>
+							</div>
+						</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+						<button class="card bg-light border-0">
+							<img class="card-img-top" src="./images/AQUARIUSLOGO.png" alt="aquarius">
+							<div class="card-body text-center">
+								<h2 class="fs-2 fst-italic fw-bold">Aquarius</h2>
+								<p class="fs-6">JAN 20 - FEB 18</p>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer-->
+		<footer class="py-5">
+			<div class="container"><p class="m-0 text-center">Copyright &copy; Your Website 2022</p></div>
+		</footer>
+		<!-- Bootstrap core JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Core theme JS-->
+		<script src="js/scripts.js"></script>
+	</body>
 </html>

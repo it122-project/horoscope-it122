@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+	font-family: 'Playfair Display', serif;
+}
+
+
+body {
+	background-color: #fffef6;
+	color: #1e1a17;
+}
+
+
+button:hover {
+	color: #6e9277;
+}
+
+button:hover > div {
+	color: #6e9277;
+}
+
+.nav-link:hover {
+	color: #6e9277 !important;
+}
+
+button div {
+	background-color: #fffef6;
+}
+
+.card {
+	background-color: #fffef6 !important;
+}
+
+.navbar {
+	background-color: #1e1a17;
+}
+
+.navbar-brand, .nav-link {
+	color: #fffad7 !important;
+}
+
+.bg-accent {
+	background-color: #6e9277;
+	color: #fffad7;
+}
